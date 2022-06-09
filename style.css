@@ -1,0 +1,49 @@
+body {
+    background-color:#5cabc9;
+    background-image: url('https://source.unsplash.com/1600x1900/?nature');
+    background-size: cover;
+    background-position: center center;
+}
+
+nav {
+    height: 10px;
+}
+
+.container {
+    display: block;
+    background-color: white;
+    opacity: .6;
+    padding: 3rem;
+    border-radius: 2rem;
+    margin: 2rem;
+    text-align: center;
+}
+
+button {
+    
+}
+
+.search {
+    background-color: none;
+}
+
+.search-bar {
+    background-color: black;
+    border: none;
+    opacity: .6;
+    color: white;
+    height: 1.5rem;  
+    padding: .5rem .5rem;
+    font-size: 100%;
+    margin: 0;
+    border-radius: 1.5rem;
+    outline: none;
+}
+button {
+    margin: 0 0 0 .2rem;
+    border-radius: 1rem;
+    border: none;
+    height: 20px;
+    width: 20px;
+    cursor: pointer;
+}
