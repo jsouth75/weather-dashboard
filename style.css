@@ -1,21 +1,24 @@
 body {
-    background-color:#5cabc9;
-    background-image: url('https://source.unsplash.com/1600x1900/?nature');
+    background-image: url('./Assets/annie-spratt-unsplash.jpg');
     background-size: cover;
     background-position: center center;
 }
 
 nav {
-    height: 10px;
+    background-image: url('https://source.unsplash.com/1600x1900/?mountains');
+    background-size: cover;
+    background-position: center center;
+    height: rem;
+    position: sticky;
 }
 
 .container {
-    display: block;
+    /* justify-content: flex; */
     background-color: white;
-    opacity: .6;
-    padding: 3rem;
+    opacity: .7;
+    padding: 2rem;
+    margin: 3rem;
     border-radius: 2rem;
-    margin: 2rem;
     text-align: center;
 }
 
@@ -23,19 +26,13 @@ button {
     
 }
 
-.search {
-    background-color: none;
-}
-
 .search-bar {
     background-color: black;
     border: none;
     opacity: .6;
     color: white;
-    height: 1.5rem;  
-    padding: .5rem .5rem;
     font-size: 100%;
-    margin: 0;
+    margin: auto; */
     border-radius: 1.5rem;
     outline: none;
 }

@@ -11,12 +11,14 @@
 
 <body>
     <!-- Header -->
-    <nav class="container header col-10 row align-itmes-start">
-            <h1 class="heading">Weather Dashboard</h1>
+    <nav class="container header">
+            <h1 class=" col-12 heading">Weather Dashboard</h1>
     </nav>
-    <!-- sidebar -->
-    <div>
-        <div class="container col-3 sidebar search">Search for a City:
+
+    <div class="container-lg row main">
+        
+        <!-- sidebar -->
+        <div class="container col-sm-4 sidebar search">Search for a City:
             <input type="text" class="search-bar">
             <button>
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
@@ -24,9 +26,27 @@
                   </svg>
             </button>
             List of previous searches
+            <div class="previous-search">
+                <div class="col-sm-4">
+                    <h2>city 1</h2>
+                </div>
+                <div class="col-sm-4">
+                    <h2>city 2</h2>
+                </div>
+                <div class="col-sm-4">
+                    <h2>city 3</h2>
+                </div>
+                <div class="col-sm-4">
+                    <h2>city 4</h2>
+                </div>
+                <div class="col-sm-4">
+                    <h2>city 5</h2>
+                </div>
+            </div>
         </div>
+        
         <!-- current place and weather -->
-        <div class="container card col-9">
+        <div class="container col-sm-4 col-lg-8 card">
             <div class="current-location">
                 <h1 class="city">Memphis, TN</h1>
                 <span id="'date-time"></span>
@@ -37,19 +57,21 @@
                 <div class="description">Sunny</div>    
                     <span class="current-weather"></span>
             </div>
-        </div>
-        <div class="container">
-            <div class="row">
-                <div class="col-2 align-itmes-center">
-                    day 1</div>
-                <div class="col-2 align-itmes-center">
-                    day 2</div>
-                <div class="col-2 align-itmes-center">
-                    day 3</div>
-                <div class="col-2 align-itmes-center">
-                    day 4</div>
-                <div class="col-2 align-itmes-center">
-                    day 5</div>
+
+            <!-- 5 day forecast -->
+            <div class="col-12">
+                <div class="row">
+                    <div class="col-sm">
+                        day 1</div>
+                    <div class="col-sm">
+                        day 2</div>
+                    <div class="col-sm">
+                        day 3</div>
+                    <div class="col-sm">
+                        day 4</div>
+                    <div class="col-sm">
+                        day 5</div>
+                </div>
             </div>
         </div>
     </div>
