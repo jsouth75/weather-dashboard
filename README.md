@@ -15,7 +15,42 @@ SO THAT I can plan a trip accordingly
 ## Acceptance Criteria
 
 GIVEN a weather dashboard with form inputs
-WHEN I search for a city
+WHEN I search for a city 
+var cities = [
+    {
+        city: 'Memphis',
+        lat: 1234,
+        long: 2345
+    },
+    {
+        city: 'Nashville',
+        lat: 5678,
+        long: 345
+    },
+    {
+        city: 'Atlanta',
+        lat: 5423,
+        long: 5423
+    },
+];
+var APIKey = "428fb4ba7c4828678c18c215cc7572b9";
+
+function getWeatherForCity(city){
+    var city = cities.First(x => x.city === city);
+    if (city == undefined)
+        throw new Exception('Unsupported cit)
+        
+    var weatherData = 
+        fetch(`https://api.openweathermap.org/data/2.5/onecall?lat=${city.lat}&lon=${city.long}&appid=${APIKey}`)
+        .then(response => return response;)
+        .catch(err => console.log('err', err););
+
+    console.log('wetaherData', weatherData)
+
+    document.getElementById('humdity').value = weatherData.current.humidity
+    weatherData.daily
+}
+
 THEN I am presented with current and future conditions for that city and that city is added to the search history
 WHEN I view current weather conditions for that city
 THEN I am presented with the city name, the date, an icon representation of weather conditions, the temperature, the humidity, the wind speed, and the UV index
