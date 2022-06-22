@@ -1,58 +1,3 @@
-
-// const searchBtn = document.getElementById("searchBtn")
-
-
-// function searchHisty(previousCities) {
-//   var pastCity = document.getElementById("").ariaValueMax;
-//   if (localStorage.getItem('initials') == null) {
-//       localStorage.setItem('initials', '[]')
-//   }
-//   if (localStorage.getItem('points') == null) {
-//       localStorage.setItem('points', '[]');
-//   }
-//   var pointList = JSON.parse(localStorage.getItem('points'));
-//   pointList.push(points);
-//   localStorage.setItem('points', JSON.stringify(pointList));
-//   var initialList = JSON.parse(localStorage.getItem('initials'));
-//   initialList.push(initials);
-//   localStorage.setItem('initial', JSON.stringify(initialList));
-//   showHighScores();
-//   console.log("show me the score")
-// };
-
-
-// // local.storage 
-// // return forecast...weather icon, temp, wind, humidity, uv index
-// var requestOptions = {
-//     method: 'GET',
-//     redirect: 'follow'
-//   };
-  
-//   fetch("https://api.openweathermap.org/data/2.5/onecall?lat=35.045570&lon=-89.668633&appid=428fb4ba7c4828678c18c215cc7572b9", requestOptions)
-//     .then(response => response.text())
-//     .then(result => console.log(result))
-//     .catch(error => console.log('error', error));
-
-
-// const para = document.querySelector('#date')
-
-// para.addEventListener('click, updateCity');
-
-// function updateCity() {
-//   const name = prompt('Enter a new name');
-//   para.textContent = `City: ${name}`;
-// }
-
-// var historyEl = document.getElementById("inputCity")
-
-// var newBtn = document.createElement("button")
-// newBtn.textContent =
-// newBtn.setAttribute("class", "container btn btn-success mb-2")
-
-// historyEl.appendChild(newBtn)
-
-
-
 const currentCity = document.getElementById("city-date");
 const currentDate = document.getElementById("date")
 const weatherIcon = document.getElementById("weatherIcon");
@@ -144,12 +89,5 @@ function searchWeather() {
     let lon = data.coord.lon;
     retrieveUV(lat, lon)
   })
-}
-
-const dayOne = document.getElementById("day1")
-const dayOneIcon = document.querySelector(".iconDay1")
-const dayOneTemp = document.querySelector(".tempDay1")
-const dayOneWind = document.querySelector(".windDay1")
-const dayOneHumidity = document.querySelector(".humidityDay1")
-
+};
 
