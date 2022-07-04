@@ -9,4 +9,4 @@ The user will be presented with the current conditions with city name, date, wea
 Also, the user will be presented with the 5 day forecast, which will consist of the date, icon, temperature, wind speed, and humidity. 
 
 
-![The weather app includes a search option, a list of cities, and a five-day forecast and current weather conditions.](./Assets/)
+![The weather app includes a search option, a list of cities, and a five-day forecast and current weather conditions.](./Assets/Weather_App_Screenshot.png?raw=true "index.html screen shot")
