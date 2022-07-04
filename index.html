@@ -35,13 +35,6 @@
                 <hr class="style1">
               </div>           
             <div class="container vstack" id="cityHistory">
-              <button class="btn btn-danger mb-2"> A city here</button>
-              <button class="btn btn-danger mb-2"> A city here</button>
-              <button class="btn btn-danger mb-2"> A city here</button>
-              <button class="btn btn-danger mb-2"> A city here</button>
-              <button class="btn btn-danger mb-2"> A city here</button>
-              <button class="btn btn-danger mb-2"> A city here</button>
-              <button class="btn btn-danger mb-2"> A city here</button>
             </div>
           </div>
           <!-- Main body with current weather and forecast -->
@@ -52,7 +45,12 @@
               <div class="currentWeather container border border-dark">
                 <h1 id="city-date">City & date</h1>
                 <p id="date">Date </p>
-                <p id="weatherIcon" class="mb-2">Icon</p>
+                <img 
+                  id="weatherIcon"
+                  src="http://openweathermap.org/img/wn/10d@2x.png"
+                  class="mb-2"
+                  alt="Weather description"
+                />
                 <p id="currentTemp" class="mb-2">Temp: </p>
                 <p id="currentWind" class="mb-2">Wind: </p>
                 <p id="currentHumidity" class="mb-2">humidity: </p>
@@ -68,8 +66,6 @@
           </div>
         </div>
       </div>
-
-
 
     <script src="./script.js"></script>
     <!-- JavaScript Bundle with Popper -->

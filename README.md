@@ -1,68 +1,12 @@
 # Weather Dashboard
 
-## Your Task
+## Goal
 
-Third-party APIs allow developers to access their data and functionality by making requests with specific parameters to a URL. Developers are often tasked with retrieving data from another application's API and using it in the context of their own. Your challenge is to build a weather dashboard that will run in the browser and feature dynamically updated HTML and CSS.
+Build a weather dashboard by retrieving data from the OpenWeather One Call API.  
+You can look up the weather for multiple cities, which the user will be presented with the current weather as well as a 5 day forecast.  
+Also, any searched city will be added to the local storage for previous cities searched. 
+The user will be presented with the current conditions with city name, date, weather icon, temperature, humidity, wind speed, and the current UV index.
+Also, the user will be presented with the 5 day forecast, which will consist of the date, icon, temperature, wind speed, and humidity. 
 
-Use the [OpenWeather One Call API](https://openweathermap.org/api/one-call-api) to retrieve weather data for cities. Read through the documentation for setup and usage instructions. You will use `localStorage` to store any persistent data. For more information on how to work with the OpenWeather API, refer to the [Full-Stack Blog on how to use API keys](https://coding-boot-camp.github.io/full-stack/apis/how-to-use-api-keys).
 
-## User Story
-
-AS A traveler
-I WANT to see the weather outlook for multiple cities
-SO THAT I can plan a trip accordingly
-
-## Acceptance Criteria
-
-GIVEN a weather dashboard with form inputs
-WHEN I search for a city 
-var cities = [
-    {
-        city: 'Memphis',
-        lat: 1234,
-        long: 2345
-    },
-    {
-        city: 'Nashville',
-        lat: 5678,
-        long: 345
-    },
-    {
-        city: 'Atlanta',
-        lat: 5423,
-        long: 5423
-    },
-];
-var APIKey = "428fb4ba7c4828678c18c215cc7572b9";
-
-function getWeatherForCity(city){
-    var city = cities.First(x => x.city === city);
-    if (city == undefined)
-        throw new Exception('Unsupported cit)
-        
-    var weatherData = 
-        fetch(`https://api.openweathermap.org/data/2.5/onecall?lat=${city.lat}&lon=${city.long}&appid=${APIKey}`)
-        .then(response => return response;)
-        .catch(err => console.log('err', err););
-
-    console.log('wetaherData', weatherData)
-
-    document.getElementById('humdity').value = weatherData.current.humidity
-    weatherData.daily
-}
-
-THEN I am presented with current and future conditions for that city and that city is added to the search history
-WHEN I view current weather conditions for that city
-THEN I am presented with the city name, the date, an icon representation of weather conditions, the temperature, the humidity, the wind speed, and the UV index
-WHEN I view the UV index
-THEN I am presented with a color that indicates whether the conditions are favorable, moderate, or severe
-WHEN I view future weather conditions for that city
-THEN I am presented with a 5-day forecast that displays the date, an icon representation of weather conditions, the temperature, the wind speed, and the humidity
-WHEN I click on a city in the search history
-THEN I am again presented with current and future conditions for that city
-
-## Mock-Up
-
-The following image shows the web application's appearance and functionality:
-
-![The weather app includes a search option, a list of cities, and a five-day forecast and current weather conditions for Atlanta.](./Assets/06-server-side-apis-homework-demo.png)
+![The weather app includes a search option, a list of cities, and a five-day forecast and current weather conditions.](./Assets/)
